@@ -132,7 +132,7 @@ const MainContent = () => {
               with us does not interfere with your daily life. because learning
               can be done anytime and anywhere.
             </Title>
-            <Title size={18} weight={400} mt={24} color={"#9C9C9C"} mt={30}>
+            <Title size={18} weight={400} color={"#9C9C9C"} mt={30}>
               Online learning with us does not interfere with your daily life.
               because learning can be done anytime and anywhere. Online learning
               with us does not interfere with your daily life. because learning
