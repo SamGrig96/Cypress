@@ -15,10 +15,12 @@ import Instagram from "../../assets/instagram.png";
 import Tiktok from "../../assets/tiktok.png";
 import Youtube from "../../assets/youtube.png";
 
+
 const useStyles = createStyles((theme) => ({
   iconPosition:{
     display:'flex',
-    justifyContent:'end'
+    justifyContent:'end',
+    flexDirection:'column'
   },
   text: {
     lineHeight: "61.2px",
@@ -34,7 +36,7 @@ const useStyles = createStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "end",
-    width:'83%'
+
   },
   iconContent: {
     backgroundColor: "#D9D9D9",
@@ -50,16 +52,16 @@ const useStyles = createStyles((theme) => ({
 const Footer = () => {
   const { classes } = useStyles();
   return (
-    <Grid mt={53} className={classes.gridSection} gutter={32}>
+    <Grid mt={45} className={classes.gridSection} gutter={32}>
       <Grid.Col md={6} lg={6} xs={12}>
-        <Group>
+
           <Image width={126} height={54} src={Logo} />
-          <Title className={classes.text} mt={24} size={36} weight={600}>
+          <Title className={classes.text} mt={0} size={36} weight={600}>
             One of the best furniture agency.
           </Title>
-        </Group>
+
       </Grid.Col>
-      <Grid.Col md={6} lg={6} xs={12} mt={24}>
+      <Grid.Col md={6} lg={6} xs={12} mt={44}>
         <List size="xl">
           <List.Item>
             <Title size={18} weight={400}>
@@ -85,13 +87,13 @@ const Footer = () => {
             </div>
           }
         />
-        <div className={classes.iconSection}>
-          <Title mt={40} size={16} weight={400}>
-            Follow us On
-          </Title>
-        </div>
+
 
           <Group align={'end'} mt={11}  className={classes.iconPosition}>
+            <Title mt={40} size={16} weight={400}>
+              Follow us On
+            </Title>
+            <Group align={'end'} mt={11}  >
             <div className={classes.iconContent}>
               {" "}
               <Image width={20} height={20} src={Facebook} />
@@ -107,7 +109,7 @@ const Footer = () => {
             <div className={classes.iconContent}>
               <Image width={20} height={20} src={Youtube} />
             </div>
-
+            </Group>
         </Group>
       </Grid.Col>
     </Grid>

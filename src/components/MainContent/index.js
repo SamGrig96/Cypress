@@ -18,6 +18,8 @@ import Room6 from "../../assets/room6.jpg";
 const useStyles = createStyles((theme) => ({
   backgroundContnet: {
     backgroundColor: "#2C3878",
+    marginTop:'85px'
+
   },
 
   container: {
@@ -60,11 +62,11 @@ const MainContent = () => {
           }}
         >
           {" "}
-          <Title size={56} weight={700} sx={{ lineHeight: "140%" }}>
+          <Title size={56} weight={700} mt={70} sx={{ lineHeight: "140%" }}>
             Minimalist Room
           </Title>
           <Title
-            mt={40}
+            mt={20}
             size={18}
             weight={400}
             sx={{ lineHeight: "28.8px", color: "#000000" }}
@@ -74,7 +76,7 @@ const MainContent = () => {
             <br /> looking at its layout.
           </Title>
         </Box>
-        <Grid mt={53} className={classes.gridSection} gutter={32}>
+        <Grid mt={0} className={classes.gridSection} gutter={32}>
           <Grid.Col
             span={12}
             sx={{
@@ -83,7 +85,7 @@ const MainContent = () => {
           >
             <Image
               src={Room1}
-              fit={"contain"}
+              fit={"fill"}
               className={classes.test}
               height={513}
             />
@@ -92,7 +94,7 @@ const MainContent = () => {
             md={6}
             lg={6}
             xs={12}
-            mt={100}
+            mt={80}
           >
             <Title size={24} weight={600}>
               Project Overview
@@ -107,14 +109,14 @@ const MainContent = () => {
             </Title>
             <Group sx={{ lineHeight: "28.8px", color: "#000000" }}>
               {" "}
-              <Title size={18} weight={400} color={"#9C9C9C"} mt={60}>
+              <Title size={18} weight={400} color={"#9C9C9C"} mt={48}>
                 July 22 - 2022
               </Title>{" "}
               <Title
                 size={18}
                 weight={400}
                 color={"#9C9C9C"}
-                mt={60}
+                mt={48}
                 ml={"55px"}
                 className={classes.infoText}
               >
@@ -122,7 +124,7 @@ const MainContent = () => {
               </Title>
             </Group>
           </Grid.Col>
-          <Grid.Col md={6} lg={6} xs={12} mt={100}   >
+          <Grid.Col md={6} lg={6} xs={12}  mt={80}>
             <Title size={24} weight={600}>
               Design Process
             </Title>
@@ -132,17 +134,17 @@ const MainContent = () => {
               with us does not interfere with your daily life. because learning
               can be done anytime and anywhere.
             </Title>
-            <Title size={18} weight={400} color={"#9C9C9C"} mt={30}>
+            <Title size={18} weight={400} color={"#9C9C9C"} mt={20}>
               Online learning with us does not interfere with your daily life.
               because learning can be done anytime and anywhere. Online learning
               with us does not interfere with your daily life. because learning
               can be done anytime and anywhere.
             </Title>
           </Grid.Col>
-          <Grid.Col md={6} lg={6} xs={12} mt={64}  >
+          <Grid.Col md={6} lg={6} xs={12} mt={44}  >
             <Image src={Room2} height={513} fit={"fill"} />
           </Grid.Col>
-          <Grid.Col md={6} lg={6} xs={12} mt={64} >
+          <Grid.Col md={6} lg={6} xs={12} mt={44} >
             <Image src={Room3} height={513} fit={"fill"} />
           </Grid.Col>
           <Grid.Col span={12} >
@@ -158,7 +160,6 @@ const MainContent = () => {
       </div>
       <div className={classes.backgroundContnet}>
         <div
-          mt={55}
           className={classes.container}
         >
           <Grid mt={53} className={classes.gridSection} gutter={32}>
