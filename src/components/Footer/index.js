@@ -56,7 +56,7 @@ const Footer = () => {
       <Grid.Col md={6} lg={6} xs={12}>
 
           <Image width={126} height={54} src={Logo} />
-          <Title className={classes.text} mt={0} size={36} weight={600}>
+          <Title className={classes.text} mt={0} size={36} weight={600} sx={{fontFamily:'PoppinsSemiBold' }}>
             One of the best furniture agency.
           </Title>
 
@@ -64,7 +64,7 @@ const Footer = () => {
       <Grid.Col md={6} lg={6} xs={12} mt={44}>
         <List size="xl">
           <List.Item>
-            <Title size={18} weight={400}>
+            <Title size={18} weight={400} sx={{fontFamily:'PoppinsReguliar' }} >
               Enter your email to get the laterst news
             </Title>
           </List.Item>

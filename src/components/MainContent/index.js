@@ -22,6 +22,7 @@ const useStyles = createStyles((theme) => ({
 
   },
 
+
   container: {
     padding: "0 120px",
     [theme.fn.smallerThan("md")]: {
@@ -62,21 +63,21 @@ const MainContent = () => {
           }}
         >
           {" "}
-          <Title size={56} weight={700} mt={70} sx={{ lineHeight: "140%" }}>
+          <Title size={56} weight={700} mt={70} sx={{ lineHeight: "140%",fontFamily:'PoppinsBold' }}>
             Minimalist Room
           </Title>
           <Title
             mt={20}
             size={18}
             weight={400}
-            sx={{ lineHeight: "28.8px", color: "#000000" }}
+            sx={{ lineHeight: "28.8px", color: "#000000",fontFamily:'PoppinsReguliar' }}
           >
             It is a long established fact that a reader will be
             <br /> distracted by the readable content of a page when
             <br /> looking at its layout.
           </Title>
         </Box>
-        <Grid mt={0} className={classes.gridSection} gutter={32}>
+        <Grid mt={50} className={classes.gridSection} gutter={32}>
           <Grid.Col
             span={12}
             sx={{
@@ -86,7 +87,6 @@ const MainContent = () => {
             <Image
               src={Room1}
               fit={"fill"}
-              className={classes.test}
               height={513}
             />
           </Grid.Col>
@@ -96,10 +96,10 @@ const MainContent = () => {
             xs={12}
             mt={80}
           >
-            <Title size={24} weight={600}>
+            <Title size={24} weight={600}  sx={{fontFamily:'PoppinsSemiBold' }} >
               Project Overview
             </Title>
-            <Title size={18} weight={400} mt={24} color={"#9C9C9C"}>
+            <Title size={18} weight={400} mt={24} color={"#9C9C9C"} sx={{fontFamily:'PoppinsReguliar' }}>
               Online learning with us does not interfere with your daily life.
               because learning can be done anytime and anywhere. Online learning
               with us does not interfere with your daily life. because learning
@@ -107,12 +107,13 @@ const MainContent = () => {
               interfere with your daily life. because learning can be done
               anytime and anywhere.
             </Title>
-            <Group sx={{ lineHeight: "28.8px", color: "#000000" }}>
+            <Group sx={{ lineHeight: "28.8px", color: "#000000" }} >
               {" "}
-              <Title size={18} weight={400} color={"#9C9C9C"} mt={48}>
+              <Title size={18} weight={400} color={"#9C9C9C"} mt={48} sx={{fontFamily:'PoppinsReguliar' }}>
                 July 22 - 2022
               </Title>{" "}
               <Title
+                  sx={{fontFamily:'PoppinsReguliar' }}
                 size={18}
                 weight={400}
                 color={"#9C9C9C"}
@@ -125,16 +126,16 @@ const MainContent = () => {
             </Group>
           </Grid.Col>
           <Grid.Col md={6} lg={6} xs={12}  mt={80}>
-            <Title size={24} weight={600}>
+            <Title size={24} weight={600} sx={{fontFamily:'PoppinsSemiBold' }}>
               Design Process
             </Title>
-            <Title size={18} weight={400} mt={24} color={"#9C9C9C"}>
+            <Title size={18} weight={400} mt={24} color={"#9C9C9C"}  sx={{fontFamily:'PoppinsReguliar' }}>
               Online learning with us does not interfere with your daily life.
               because learning can be done anytime and anywhere. Online learning
               with us does not interfere with your daily life. because learning
               can be done anytime and anywhere.
             </Title>
-            <Title size={18} weight={400} color={"#9C9C9C"} mt={20}>
+            <Title size={18} weight={400} color={"#9C9C9C"} mt={20}  sx={{fontFamily:'PoppinsReguliar' }}>
               Online learning with us does not interfere with your daily life.
               because learning can be done anytime and anywhere. Online learning
               with us does not interfere with your daily life. because learning
@@ -164,12 +165,12 @@ const MainContent = () => {
         >
           <Grid mt={53} className={classes.gridSection} gutter={32}>
             <Grid.Col md={6} lg={6} xs={12}>
-              <Title color={"#FFFFFF"}>
+              <Title color={"#FFFFFF"} sx={{fontFamily:'PoppinsSemiBold' }}>
                 let's discuss making your interior like a dream place!
               </Title>
             </Grid.Col>
             <Grid.Col md={6} lg={6} xs={12}>
-              <Title color={"#D9D9D9"} size={18} weight={400}>
+              <Title color={"#D9D9D9"} size={18} weight={400} sx={{fontFamily:'PoppinsReguliar' }}>
                 Contact us below to work together to build your amazing interior
               </Title>
               <Button mt={20} className={classes.contactBtn}>
