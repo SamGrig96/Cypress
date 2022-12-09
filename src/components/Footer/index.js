@@ -32,6 +32,12 @@ const useStyles = createStyles((theme) => ({
       padding: "0 10px",
     },
   },
+  leftSection: {
+
+    [theme.fn.smallerThan("md")]: {
+      display:'none'
+    },
+  },
   iconSection: {
     display: "flex",
     flexDirection: "column",
@@ -87,30 +93,36 @@ const Footer = () => {
             </div>
           }
         />
+<Grid>
+  <Grid.Col span={6} className={classes.leftSection}/>
+  <Grid.Col span={6} >
+
+    <Group align={'start'} mt={11}  className={classes.iconPosition}>
+      <Title mt={40} size={16} weight={400}>
+        Follow us On
+      </Title>
+      <Group>
+        <div className={classes.iconContent}>
+          {" "}
+          <Image width={20} height={20} src={Facebook} />
+        </div>
+
+        <div className={classes.iconContent}>
+          <Image width={20} height={20} src={Instagram} />
+        </div>
+        <div className={classes.iconContent}>
+          {" "}
+          <Image width={20} height={20} src={Tiktok} />
+        </div>
+        <div className={classes.iconContent}>
+          <Image width={20} height={20} src={Youtube} />
+        </div>
+      </Group>
+    </Group>
+  </Grid.Col>
+</Grid>
 
 
-          <Group align={'end'} mt={11}  className={classes.iconPosition}>
-            <Title mt={40} size={16} weight={400}>
-              Follow us On
-            </Title>
-            <Group align={'end'} mt={11}  >
-            <div className={classes.iconContent}>
-              {" "}
-              <Image width={20} height={20} src={Facebook} />
-            </div>
-
-            <div className={classes.iconContent}>
-              <Image width={20} height={20} src={Instagram} />
-            </div>
-            <div className={classes.iconContent}>
-              {" "}
-              <Image width={20} height={20} src={Tiktok} />
-            </div>
-            <div className={classes.iconContent}>
-              <Image width={20} height={20} src={Youtube} />
-            </div>
-            </Group>
-        </Group>
       </Grid.Col>
     </Grid>
   );
