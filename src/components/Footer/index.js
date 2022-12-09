@@ -94,8 +94,8 @@ const Footer = () => {
           }
         />
 <Grid>
-  <Grid.Col span={6} className={classes.leftSection}/>
-  <Grid.Col span={6} >
+  <Grid.Col span={8} className={classes.leftSection}/>
+  <Grid.Col span={4} >
 
     <Group align={'start'} mt={11}  className={classes.iconPosition}>
       <Title mt={40} size={16} weight={400}>
